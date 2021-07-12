@@ -60,17 +60,17 @@
 
 - (IBAction)pressedButton:(id)sender
 {
-    _label.text = [NSString stringWithFormat:@"Button %i pressed", [_swipeView indexOfItemViewOrSubview:sender]];
+    _label.text = [NSString stringWithFormat:@"Button %li pressed", (long)[_swipeView indexOfItemViewOrSubview:sender]];
 }
 
 - (IBAction)toggledSwitch:(id)sender
 {
-    _label.text = [NSString stringWithFormat:@"Switch %i toggled", [_swipeView indexOfItemViewOrSubview:sender]];
+    _label.text = [NSString stringWithFormat:@"Switch %li toggled", (long)[_swipeView indexOfItemViewOrSubview:sender]];
 }
 
 - (IBAction)changedSlider:(id)sender
 {
-    _label.text = [NSString stringWithFormat:@"Slider %i changed", [_swipeView indexOfItemViewOrSubview:sender]];
+    _label.text = [NSString stringWithFormat:@"Slider %li changed", (long)[_swipeView indexOfItemViewOrSubview:sender]];
 }
 
 @end
