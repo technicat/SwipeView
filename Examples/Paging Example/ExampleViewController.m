@@ -31,6 +31,7 @@
     {
         [_items addObject:@(i)];
     }
+    [super awakeFromNib];
 }
 
 - (void)dealloc
